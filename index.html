@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Орешки со сгущёнкой от Даши</title>
-<meta name="description" content="Домашние орешки со сгущёнкой от Даши. $25 за упаковку. Бесплатная доставка по Нью-Йорку от 5 упаковок.">
+<title>Орешки со сгущёнкой от Дарьи</title>
+<meta name="description" content="Домашние орешки со сгущёнкой от Дарьи. $25 за упаковку. Бруклин, 1411 Avenue V. Бесплатная доставка в радиусе 1 мили.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -100,8 +100,8 @@
   .feature .ico { font-size: 1.5rem; margin-bottom: 6px; }
 
   /* Gallery */
-  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .gallery-grid img { border-radius: var(--radius); width: 100%; height: 340px; object-fit: cover; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .gallery-grid img { border-radius: var(--radius); width: 100%; height: 380px; object-fit: cover; }
 
   /* Pricing */
   .pricing { background: var(--dough); }
@@ -136,6 +136,10 @@
   .cta { background: var(--choco); color: #f3e6d4; text-align: center; }
   .cta h2 { color: #fff; font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 14px; }
   .cta p { font-size: 1.1rem; margin-bottom: 30px; }
+  .cta .address { margin: 36px auto 0; max-width: 420px; padding-top: 28px; border-top: 1px solid rgba(243, 230, 212, .2); }
+  .cta .address span { display: block; font-weight: 700; color: #fff; margin-bottom: 4px; }
+  .cta .address a { color: #f3e6d4; font-size: 1.1rem; }
+  .cta .address small { display: block; margin-top: 6px; color: #c9ad8f; }
   .cta .phone { display: block; margin-top: 18px; font-size: 1.2rem; color: #f0b46e; text-decoration: none; font-weight: 700; }
 
   footer { background: #2c1b0f; color: #b89d82; text-align: center; padding: 24px; font-size: .9rem; }
@@ -154,7 +158,9 @@
     .hero .wrap, .about .wrap, .cards { grid-template-columns: 1fr; }
     .hero-img { order: -1; }
     .price-badge { left: 16px; bottom: 16px; }
-    .gallery-grid, .steps { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid img { height: 240px !important; }
     .gallery-grid img { height: 280px; }
     section { padding: 64px 0; }
   }
@@ -168,11 +174,12 @@
 
 <nav>
   <div class="wrap">
-    <a href="#" class="logo">Орешки <span>от Даши</span></a>
+    <a href="#" class="logo">Орешки <span>от Дарьи</span></a>
     <div class="nav-links">
       <a href="#about">Обо мне</a>
       <a href="#gallery">Фото</a>
       <a href="#price">Цены</a>
+      <a href="#address">Адрес</a>
       <a class="btn btn-wa" href="https://wa.me/79602990368" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Заказать</a>
     </div>
   </div>
@@ -181,7 +188,7 @@
 <header class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Домашняя выпечка · Нью-Йорк</span>
+      <span class="eyebrow">Домашняя выпечка · Бруклин</span>
       <h1>Те самые <em>орешки</em> со&nbsp;сгущёнкой</h1>
       <p class="lead">Хрустящее песочное тесто и густая варёная сгущёнка внутри. Вкус из детства — по классическому рецепту, с любовью и без спешки.</p>
       <div class="hero-actions">
@@ -190,7 +197,7 @@
       </div>
     </div>
     <div class="hero-img">
-      <img src="images/2.webp" alt="Корзинка с орешками со сгущёнкой">
+      <img src="images/9.jpg" alt="Орешки в подарочных коробках с лентами">
       <div class="price-badge"><strong>$25</strong><span>за упаковку</span></div>
     </div>
   </div>
@@ -198,9 +205,9 @@
 
 <section class="about" id="about">
   <div class="wrap">
-    <img src="images/4.jpg" alt="Орешки, разломанные пополам, с варёной сгущёнкой внутри" loading="lazy">
+    <img src="images/6.jpg" alt="Орешки в коробке" loading="lazy">
     <div>
-      <h2>Привет! Меня зовут Даша</h2>
+      <h2>Привет! Меня зовут Дарья</h2>
       <p>Я делаю самые вкусные орешки со сгущёнкой. Каждую партию пеку вручную: замешиваю нежное песочное тесто, выпекаю половинки до золотистой корочки и щедро наполняю варёной сгущёнкой.</p>
       <p>Это тот самый вкус, который многие помнят с детства, — к чаю, на праздник или в подарок близким.</p>
       <div class="features">
@@ -220,9 +227,10 @@
       <p>Вот так выглядят мои орешки</p>
     </div>
     <div class="gallery-grid">
-      <img src="images/1.webp" alt="Орешки в подарочной коробке" loading="lazy">
-      <img src="images/3.jpg" alt="Тарелка с орешками" loading="lazy">
-      <img src="images/4.jpg" alt="Орешки со сгущёнкой в стеклянной банке" loading="lazy" style="object-position: center 70%">
+      <img src="images/5.jpg" alt="Подарочная коробка орешков с бантом" loading="lazy">
+      <img src="images/7.jpg" alt="Розовые орешки с малиной" loading="lazy" style="object-position: center 75%">
+      <img src="images/8.jpg" alt="Жёлтые орешки с лимоном" loading="lazy" style="object-position: center 75%">
+      <img src="images/10.jpg" alt="Открытая коробка орешков и тюльпаны" loading="lazy">
     </div>
   </div>
 </section>
@@ -235,27 +243,27 @@
     </div>
     <div class="cards">
       <div class="card">
-        <h3>Одна упаковка</h3>
-        <p>Попробовать или порадовать себя</p>
+        <h3>Самовывоз</h3>
+        <p>Заберите заказ сами: 1411 Avenue V, Brooklyn</p>
         <div class="amount">$25</div>
         <p>за упаковку</p>
         <ul>
           <li>Свежая выпечка под заказ</li>
           <li>Подарочная коробка</li>
-          <li>Доставка обсуждается</li>
+          <li>Удобное время — договоримся</li>
         </ul>
         <a class="btn btn-ghost" href="https://wa.me/79602990368" target="_blank" rel="noopener">Заказать</a>
       </div>
       <div class="card best">
-        <span class="tag">Выгодно</span>
-        <h3>От 5 упаковок</h3>
-        <p>Для праздника, офиса или в подарок</p>
+        <span class="tag">Бесплатно</span>
+        <h3>Доставка</h3>
+        <p>Принесу прямо к вашей двери</p>
         <div class="amount">$25</div>
         <p>за упаковку</p>
         <ul>
           <li>Свежая выпечка под заказ</li>
-          <li>Подарочные коробки</li>
-          <li><b>Бесплатная доставка по Нью-Йорку</b></li>
+          <li>Подарочная коробка</li>
+          <li><b>Бесплатная доставка в радиусе 1 мили</b></li>
         </ul>
         <a class="btn btn-wa" href="https://wa.me/79602990368" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Заказать</a>
       </div>
@@ -270,7 +278,7 @@
     </div>
     <div class="steps">
       <div class="step"><div class="num">1</div><h3>Напишите мне</h3><p>В WhatsApp: +7 960 299-03-68</p></div>
-      <div class="step"><div class="num">2</div><h3>Обсудим заказ</h3><p>Количество упаковок, дату и адрес</p></div>
+      <div class="step"><div class="num">2</div><h3>Обсудим заказ</h3><p>Количество упаковок, дату, самовывоз или доставку</p></div>
       <div class="step"><div class="num">3</div><h3>Наслаждайтесь</h3><p>Свежие орешки — прямо к вашему чаю</p></div>
     </div>
   </div>
@@ -282,10 +290,15 @@
     <p>Напишите мне в WhatsApp — отвечу и всё приготовлю.</p>
     <a class="btn btn-wa" href="https://wa.me/79602990368" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Написать в WhatsApp</a>
     <a class="phone" href="https://wa.me/79602990368" target="_blank" rel="noopener">+7 960 299-03-68</a>
+    <div class="address" id="address">
+      <span>📍 Адрес</span>
+      <a href="https://maps.google.com/?q=1411+Avenue+V,+Brooklyn,+NY+11229" target="_blank" rel="noopener">1411 Avenue V, Brooklyn, NY 11229</a>
+      <small>Бесплатная доставка в радиусе 1 мили</small>
+    </div>
   </div>
 </section>
 
-<footer>© <span id="y"></span> Орешки от Даши · Домашняя выпечка в Нью-Йорке</footer>
+<footer>© <span id="y"></span> Орешки от Дарьи · 1411 Avenue V, Brooklyn, NY 11229</footer>
 
 <a class="wa-float" href="https://wa.me/79602990368" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg><use href="#wa"/></svg></a>
 
